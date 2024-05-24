@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "lib": ["es2020"],
+    "types": [
+      "node",
+      "jest"
+    ] /* Specify type package names to be included without being referenced in a source file. */,
+
+    /* Type Checking */
+    "strict": false /* Enable all strict type-checking options. */
+  }
+}

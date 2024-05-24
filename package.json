@@ -1,0 +1,25 @@
+{
+  "name": "llm-predictor",
+  "version": "1.0.0",
+  "description": "Implementation of https://arxiv.org/pdf/2402.18563",
+  "main": "index.js",
+  "author": "David Laprade <david.laprade@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.17.1",
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "google-news-scraper": "^1.2.0",
+    "openai": "^4.28.4"
+  },
+  "scripts": {
+    "predict": "ts-node src/scripts/predict.ts"
+  }
+}
