@@ -25,6 +25,7 @@ program
       const output = JSON.stringify(prediction, null, 2)
 
       const timestamp = Math.floor(Date.now() / 1000)
+      await fs.mkdir("output", { recursive: true });
       const filename = `output/prediction-${timestamp}.txt`
       await fs.writeFile(filename, output)
       console.log(`Output written successfully to ${filename}.`)
