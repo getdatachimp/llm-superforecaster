@@ -63,3 +63,7 @@ Question JSON files are expected to have the following properties:
   [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string.
 * __closeDate__: The end time of the forecasting period, formatted as an
   [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string.
+
+## Cost
+
+Approximate cost to make a single prediction is currently $0.25.
