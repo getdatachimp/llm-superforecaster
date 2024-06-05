@@ -3,10 +3,7 @@ import { generateNewsQueries } from './newsQueryGenerator'
 import { searchNewsSourcesFor } from './newsAPIService'
 import { rankArticlesForRelevance } from './newsRanker'
 import { summarizeNewsArticles } from './newsSummarizer'
-
 import { generateGPT4Prediction } from './gptPredictor'
-import { generateClaudeOpusPrediction } from './claudePredictor'
-import { generateGeminiProPrediction } from './geminiPredictor'
 
 export const forecast = async (query: ForecastQuery): Promise<PredictionOutput> => {
   // Generate news queries based on question.
@@ -33,14 +30,14 @@ export const forecast = async (query: ForecastQuery): Promise<PredictionOutput> 
   // Make predictions.
   const predictions = await Promise.all([
     generateGPT4Prediction({ query, summaries }),
-    generateClaudeOpusPrediction({ query, summaries }),
-    generateGeminiProPrediction({ query, summaries }),
+    generateGPT4Prediction({ query, summaries }),
   ])
 
   // Aggregate predictions.
   const probability = predictions.reduce(
     (acc, p) => acc + p.probability, 0
   ) / predictions.length
+
   console.log("Final probability:", probability)
 
   return {

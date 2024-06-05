@@ -34,8 +34,6 @@ yarn install
 Get API keys for:
 
 * [OpenAI](https://platform.openai.com/account/api-keys)
-* [Anthropic](https://console.anthropic.com/settings/keys)
-* [Gemini](https://ai.google.dev/gemini-api/docs/api-key)
 * [NewsCatcher](https://www.newscatcherapi.com/)
 
 Add your API keys:
