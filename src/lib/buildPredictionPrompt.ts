@@ -20,7 +20,7 @@ const buildPredictionPrompt = ({
   return `
 Question: ${query.question}
 Question Background: ${query.background}
-Resolution Uriteria: ${query.resolutionCriteria}
+Resolution Criteria: ${query.resolutionCriteria}
 Today’s date: ${getCurrentDateFormatted()}
 Question close date: ${query.closeDate}
 
