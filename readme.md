@@ -2,15 +2,18 @@
 
 This repo implements the system detailed in [Approaching Human-Level Forecasting
 with Language Models](https://arxiv.org/pdf/2402.18563) by Halawi et al.
+This is a summary of the architecture:
 
-It uses [large language models](https://en.wikipedia.org/wiki/Large_language_model)
+<img width="788" alt="image" src="https://github.com/getdatachimp/llm-superforecaster/assets/7997618/c51d6a8f-91cd-4aaf-8c3d-bbb974af7c88">
+
+The system uses [large language models](https://en.wikipedia.org/wiki/Large_language_model)
 to generate accurate forecasts for arbitrary Yes/No questions -- like those seen
 on popular prediction markets such as
 [Polymarket](https://polymarket.com),
 [Metaculus](https://www.metaculus.com/home/), and
 [Manifold](https://manifold.markets/).
 
-Examples include:
+Example questions you could predict:
 
 * Will the price of Dogecoin exceed $0.50 USD during any 48h period before 2025?
 * Will Carlos Alcaraz win the 2024 French Open?
@@ -23,7 +26,7 @@ to research and answer each question it is provided.
 
 It is the core of what powers the [Cassandra0racle](https://x.com/Cassandra0racle) Twitter account.
 
-### Setup
+## Setup
 
 Install dependencies:
 
@@ -43,7 +46,7 @@ cp .env.example .env
 vim .env
 ```
 
-### Usage
+## Usage
 
 To make a prediction:
 
